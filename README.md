@@ -32,3 +32,7 @@ Aplicação web que consome uma API externa para buscar e exibir produtos em uma
 - JavaScript (ES6+)
 - HTML5
 - CSS3
+
+
+## 👀 Preview
+<img src="./preview.png" alt="Preview do projeto x" width="600"> 
