@@ -12,10 +12,10 @@ const Produtos = () => {
       .then((json) => setProdutos(json));
   }, []);
 
-  if (produtos === null) return null;
+  if (produtos === null) return <p>Carregando...</p>;
   return (
     <section className={`${styles.produtos} animeLeft`}>
-      <Head title='Ranek | Produtos' description="Descrição do site Ranek" />
+      <Head title="Ranek | Produtos" description="Descrição do site Ranek" />
       {produtos.map((produto) => (
         <Link to={`produto/${produto.id}`} key={produto.id}>
           <img src={produto.fotos[0].src} alt={produto.fotos[0].titulo} />
